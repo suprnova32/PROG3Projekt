@@ -4,6 +4,7 @@
 
 #include "AmazonSimpleStorageService.h"
 #include "utilities.h"
+#include <stdio.h>
 
 bool AmazonSimpleStorageService::m_initialized;
 std::string AmazonSimpleStorageService::m_key;
@@ -55,9 +56,9 @@ void AmazonSimpleStorageService::initializeService()
     
     m_initialized = true;
     // Hier müssen Sie Ihre eigenen Daten eintragen.
-    //std::ifstream input("/mnt/Peter Heusch/Teaching/PRO3/AmazonS3/AmazonS3.data");
-    m_key = "AKIAJZ2GYUUHM7NGJ2MA";
-    m_value = "knjzWY0laqR0nOLleyyQT3wUYVeuE0RLB2+sDcOh";
+    std::ifstream input("/home/eternus/PROG3Projekt/AmazonS3.data");
+    input >> m_key;
+    input >> m_value;
     //input.close();
     soap_ssl_init();
 }
@@ -70,7 +71,7 @@ void AmazonSimpleStorageService::createBucket(const std::string& name)
     _ns1__CreateBucket request;
     _ns1__CreateBucketResponse response;
     
-    request.AWSAccessKeyId = strdup(m_key.c_str());
+    request.AWSAccessKeyId = (std::string*)strdup(m_key.c_str()); //strdup(m_key.c_str());
     request.Bucket=strdup(name.c_str());
     request.Signature=aws_signature(
             m_value.c_str(),
@@ -104,7 +105,7 @@ void AmazonSimpleStorageService::putObject(const std::string& bucket, const std:
     image.__ptr = (unsigned char *)strdup(data.c_str());
     image.__size = strlen((char *)(image.__ptr));
 
-    request.AWSAccessKeyId = strdup(m_key.c_str());
+    request.AWSAccessKeyId = (std::string*)strdup(m_key.c_str());
     request.Bucket=strdup(bucket.c_str());
     request.Signature=aws_signature(
             m_value.c_str(),

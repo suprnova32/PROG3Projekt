@@ -7,18 +7,24 @@
 
 #include "VirtualTapeDrive.h"
 #include <string>
+#include <iostream>
 
 #include "VirtualTapeRobot.h"
 #include "AmazonSimpleStorageService.h"
 
-void testService(const char *name) 
+void testService(const std::string name) 
 
 {
     CVirtualTapeDrive vtd;
     CVirtualTapeRobot vtr;
     AmazonSimpleStorageService service;
-    service.createBucket(std::string(name));
-    service.putObject(std::string(name), "EinObjekt");
+    service.createBucket(name);
+    service.putObject(name, "EinObjekt");
     
+}
+
+int main(int argc, char** argv){
+    testService("NewBucket");
+    return 0;
 }
 
