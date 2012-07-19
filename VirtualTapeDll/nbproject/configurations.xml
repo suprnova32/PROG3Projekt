@@ -9,7 +9,6 @@
       <itemPath>VirtualTapeDrive.h</itemPath>
       <itemPath>VirtualTapeRobot.h</itemPath>
       <itemPath>dllmain.h</itemPath>
-      <itemPath>/home/eternus/AmazonS3/soapAmazonS3SoapBindingProxy.h</itemPath>
       <itemPath>soapH.h</itemPath>
       <itemPath>utilities.h</itemPath>
     </logicalFolder>
