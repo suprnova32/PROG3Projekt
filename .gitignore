@@ -1,2 +1,3 @@
 VirtualTapeDll/build/*
 *.data~
+gsoap-2.8/.xpce/*
