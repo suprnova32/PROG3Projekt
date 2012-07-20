@@ -35,11 +35,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/VirtualTapeRobot.o \
-	${OBJECTDIR}/_ext/1047471460/stdsoap2_cpp.o \
+	${OBJECTDIR}/soapAmazonS3SoapBindingProxy.o \
 	${OBJECTDIR}/utilties.o \
-	${OBJECTDIR}/_ext/436641924/soapC.o \
+	${OBJECTDIR}/stdsoap2_cpp.o \
+	${OBJECTDIR}/soapC.o \
 	${OBJECTDIR}/VirtualTapeDrive.o \
-	${OBJECTDIR}/_ext/436641924/soapAmazonS3SoapBindingProxy.o \
 	${OBJECTDIR}/VirtualTape.o \
 	${OBJECTDIR}/dllmain.o \
 	${OBJECTDIR}/AmazonSimpleStorageService.o
@@ -74,30 +74,30 @@ ${OBJECTDIR}/VirtualTapeRobot.o: VirtualTapeRobot.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/VirtualTapeRobot.o VirtualTapeRobot.cpp
 
-${OBJECTDIR}/_ext/1047471460/stdsoap2_cpp.o: /home/eternus/gsoap-2.8/gsoap/stdsoap2_cpp.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/1047471460
+${OBJECTDIR}/soapAmazonS3SoapBindingProxy.o: soapAmazonS3SoapBindingProxy.cpp 
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1047471460/stdsoap2_cpp.o /home/eternus/gsoap-2.8/gsoap/stdsoap2_cpp.cpp
+	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/soapAmazonS3SoapBindingProxy.o soapAmazonS3SoapBindingProxy.cpp
 
 ${OBJECTDIR}/utilties.o: utilties.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/utilties.o utilties.cpp
 
-${OBJECTDIR}/_ext/436641924/soapC.o: /home/eternus/AmazonS3/soapC.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/436641924
+${OBJECTDIR}/stdsoap2_cpp.o: stdsoap2_cpp.cpp 
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/436641924/soapC.o /home/eternus/AmazonS3/soapC.cpp
+	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/stdsoap2_cpp.o stdsoap2_cpp.cpp
+
+${OBJECTDIR}/soapC.o: soapC.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/soapC.o soapC.cpp
 
 ${OBJECTDIR}/VirtualTapeDrive.o: VirtualTapeDrive.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/VirtualTapeDrive.o VirtualTapeDrive.cpp
-
-${OBJECTDIR}/_ext/436641924/soapAmazonS3SoapBindingProxy.o: /home/eternus/AmazonS3/soapAmazonS3SoapBindingProxy.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/436641924
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/436641924/soapAmazonS3SoapBindingProxy.o /home/eternus/AmazonS3/soapAmazonS3SoapBindingProxy.cpp
 
 ${OBJECTDIR}/VirtualTape.o: VirtualTape.cpp 
 	${MKDIR} -p ${OBJECTDIR}
