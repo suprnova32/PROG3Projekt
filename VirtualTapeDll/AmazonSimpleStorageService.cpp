@@ -1,6 +1,7 @@
-#include <soapAmazonS3SoapBindingProxy.h>
-#include <AmazonS3SoapBinding.nsmap>
+#include "../AmazonS3/soapAmazonS3SoapBindingProxy.h"
+#include "../AmazonS3/AmazonS3SoapBinding.nsmap"
 #include <fstream>
+#include <string>
 
 #include "AmazonSimpleStorageService.h"
 #include "utilities.h"
@@ -59,7 +60,7 @@ void AmazonSimpleStorageService::initializeService()
     std::ifstream input("/home/eternus/PROG3Projekt/AmazonS3.data");
     input >> m_key;
     input >> m_value;
-    //input.close();
+    input.close();
     soap_ssl_init();
 }
 
@@ -71,7 +72,7 @@ void AmazonSimpleStorageService::createBucket(const std::string& name)
     _ns1__CreateBucket request;
     _ns1__CreateBucketResponse response;
     
-    request.AWSAccessKeyId = (std::string*)strdup(m_key.c_str()); //strdup(m_key.c_str());
+    request.AWSAccessKeyId = strdup(m_key.c_str());
     request.Bucket=strdup(name.c_str());
     request.Signature=aws_signature(
             m_value.c_str(),
@@ -105,7 +106,7 @@ void AmazonSimpleStorageService::putObject(const std::string& bucket, const std:
     image.__ptr = (unsigned char *)strdup(data.c_str());
     image.__size = strlen((char *)(image.__ptr));
 
-    request.AWSAccessKeyId = (std::string*)strdup(m_key.c_str());
+    request.AWSAccessKeyId = strdup(m_key.c_str());
     request.Bucket=strdup(bucket.c_str());
     request.Signature=aws_signature(
             m_value.c_str(),

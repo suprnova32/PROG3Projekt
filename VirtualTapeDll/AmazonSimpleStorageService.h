@@ -1,6 +1,8 @@
 
 #ifndef AMAZONSIMPLESTORAGESERVICE_H
 #define	AMAZONSIMPLESTORAGESERVICE_H
+#include <string>
+
 class AmazonS3SoapBindingProxy;
 
 class AmazonSimpleStorageService {

@@ -9,7 +9,8 @@
       <itemPath>VirtualTapeDrive.h</itemPath>
       <itemPath>VirtualTapeRobot.h</itemPath>
       <itemPath>dllmain.h</itemPath>
-      <itemPath>soapH.h</itemPath>
+      <itemPath>../AmazonS3/soapAmazonS3SoapBindingProxy.h</itemPath>
+      <itemPath>../AmazonS3/soapH.h</itemPath>
       <itemPath>utilities.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -19,14 +20,14 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>AmazonS3SoapBinding.nsmap</itemPath>
+      <itemPath>../AmazonS3/AmazonS3SoapBinding.nsmap</itemPath>
       <itemPath>AmazonSimpleStorageService.cpp</itemPath>
       <itemPath>VirtualTape.cpp</itemPath>
       <itemPath>VirtualTapeDrive.cpp</itemPath>
       <itemPath>VirtualTapeRobot.cpp</itemPath>
       <itemPath>dllmain.cpp</itemPath>
-      <itemPath>/home/eternus/AmazonS3/soapAmazonS3SoapBindingProxy.cpp</itemPath>
-      <itemPath>/home/eternus/AmazonS3/soapC.cpp</itemPath>
+      <itemPath>../AmazonS3/soapAmazonS3SoapBindingProxy.cpp</itemPath>
+      <itemPath>../AmazonS3/soapC.cpp</itemPath>
       <itemPath>/home/eternus/gsoap-2.8/gsoap/stdsoap2_cpp.cpp</itemPath>
       <itemPath>utilties.cpp</itemPath>
     </logicalFolder>

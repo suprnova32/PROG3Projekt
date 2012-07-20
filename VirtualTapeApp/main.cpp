@@ -1,16 +1,27 @@
 #include <cstdlib>
-
-#include <dllmain.h>
+//#include "dllmain.h"
+#include "AmazonSimpleStorageService.h"
 
 using namespace std;
 
 /*
  * 
  */
+
+
+void testService(const std::string &name) 
+
+{
+    AmazonSimpleStorageService service;
+    service.createBucket(name);
+    service.putObject(name, "EinObjekt");
+    
+}
+
 int main(int argc, char** argv) 
 
 {
-    testService("Hurz");
+    testService("Teste2");
     return 0;
 }
 

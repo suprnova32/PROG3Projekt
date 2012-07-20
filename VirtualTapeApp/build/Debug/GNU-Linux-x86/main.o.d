@@ -1,3 +1,4 @@
-build/Debug/GNU-Linux-x86/main.o: main.cpp ../VirtualTapeDll/dllmain.h
+build/Debug/GNU-Linux-x86/main.o: main.cpp \
+ ../VirtualTapeDll/AmazonSimpleStorageService.h
 
-../VirtualTapeDll/dllmain.h:
+../VirtualTapeDll/AmazonSimpleStorageService.h:

@@ -22,9 +22,3 @@ void testService(const std::string name)
     service.putObject(name, "EinObjekt");
     
 }
-
-int main(int argc, char** argv){
-    testService("NewBucket");
-    return 0;
-}
-
