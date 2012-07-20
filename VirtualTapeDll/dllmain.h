@@ -8,16 +8,16 @@
 #ifndef DLLMAIN_H
 #define	DLLMAIN_H
 
-//#ifdef	__cplusplus
-//extern "C" {
-//#endif
+#ifdef	__cplusplus
+extern "C" {
+#endif
 
 void testService(const char *name);
 
 
-//#ifdef	__cplusplus
-//}
-//#endif
+#ifdef	__cplusplus
+}
+#endif
 
 
 #endif	/* DLLMAIN_H */
