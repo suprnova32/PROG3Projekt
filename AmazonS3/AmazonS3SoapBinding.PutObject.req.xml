@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:ns1="http://s3.amazonaws.com/doc/2006-03-01/">
+ <SOAP-ENV:Body>
+   <ns1:PutObject>
+    <ns1:Bucket></ns1:Bucket>
+    <ns1:Key></ns1:Key>
+    <ns1:Metadata>
+     <ns1:Name></ns1:Name>
+     <ns1:Value></ns1:Value>
+    </ns1:Metadata>
+    <ns1:Metadata>
+     <ns1:Name></ns1:Name>
+     <ns1:Value></ns1:Value>
+    </ns1:Metadata>
+    <ns1:ContentLength>0</ns1:ContentLength>
+    <ns1:AccessControlList>
+     <ns1:Grant>
+      <ns1:Grantee>
+      </ns1:Grantee>
+      <ns1:Permission>READ</ns1:Permission>
+     </ns1:Grant>
+     <ns1:Grant>
+      <ns1:Grantee>
+      </ns1:Grantee>
+      <ns1:Permission>READ</ns1:Permission>
+     </ns1:Grant>
+    </ns1:AccessControlList>
+    <ns1:StorageClass>STANDARD</ns1:StorageClass>
+    <ns1:AWSAccessKeyId></ns1:AWSAccessKeyId>
+    <ns1:Timestamp>2012-07-12T14:05:58Z</ns1:Timestamp>
+    <ns1:Signature></ns1:Signature>
+    <ns1:Credential></ns1:Credential>
+   </ns1:PutObject>
+
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

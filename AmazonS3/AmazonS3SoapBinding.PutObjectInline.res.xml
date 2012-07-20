@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:ns1="http://s3.amazonaws.com/doc/2006-03-01/">
+ <SOAP-ENV:Body>
+  <ns1:PutObjectInlineResponse>
+   <ns1:PutObjectInlineResponse>
+    <ns1:ETag></ns1:ETag>
+    <ns1:LastModified>2012-07-12T14:05:58Z</ns1:LastModified>
+   </ns1:PutObjectInlineResponse>
+  </ns1:PutObjectInlineResponse>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

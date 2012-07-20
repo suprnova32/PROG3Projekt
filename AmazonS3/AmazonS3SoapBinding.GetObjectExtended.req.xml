@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:ns1="http://s3.amazonaws.com/doc/2006-03-01/">
+ <SOAP-ENV:Body>
+   <ns1:GetObjectExtended>
+    <ns1:Bucket></ns1:Bucket>
+    <ns1:Key></ns1:Key>
+    <ns1:GetMetadata>false</ns1:GetMetadata>
+    <ns1:GetData>false</ns1:GetData>
+    <ns1:InlineData>false</ns1:InlineData>
+    <ns1:ByteRangeStart>0</ns1:ByteRangeStart>
+    <ns1:ByteRangeEnd>0</ns1:ByteRangeEnd>
+    <ns1:IfModifiedSince>2012-07-12T14:05:58Z</ns1:IfModifiedSince>
+    <ns1:IfUnmodifiedSince>2012-07-12T14:05:58Z</ns1:IfUnmodifiedSince>
+    <ns1:IfMatch></ns1:IfMatch>
+    <ns1:IfMatch></ns1:IfMatch>
+    <ns1:IfNoneMatch></ns1:IfNoneMatch>
+    <ns1:IfNoneMatch></ns1:IfNoneMatch>
+    <ns1:ReturnCompleteObjectOnConditionFailure>false</ns1:ReturnCompleteObjectOnConditionFailure>
+    <ns1:AWSAccessKeyId></ns1:AWSAccessKeyId>
+    <ns1:Timestamp>2012-07-12T14:05:58Z</ns1:Timestamp>
+    <ns1:Signature></ns1:Signature>
+    <ns1:Credential></ns1:Credential>
+   </ns1:GetObjectExtended>
+
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
